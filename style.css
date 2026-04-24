@@ -57,24 +57,25 @@ main{
     display: flex;
     flex-direction: column;
     background-color: var(--bege);
-    border: 5px solid green;
     width: 100vw;
     overflow: hidden;
-    min-height: 691px;
+    padding-bottom: 400px;
+
+    background-image: url(img/hero-mobile.png);
+    background-size: 379px; /* Faz a imagem cobrir todo o espaço */
+    background-position: bottom right; /* Centraliza a imagem */
+    background-repeat: no-repeat;
 }
 
-.hero-img img{
+
+/* .hero-img img{
     max-width: 379px;
-      position: absolute;
-
-  bottom: 0;
-
-  right: 0;
-
-  width: 80%;
-
-  z-index: 1; /* atrás do texto */
-}
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    z-index: 1; atrás do texto
+} */
 
 .info-hero .logo{
     display: flex;
