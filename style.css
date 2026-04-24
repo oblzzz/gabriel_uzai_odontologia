@@ -62,7 +62,7 @@ main{
     padding-bottom: 400px;
 
     background-image: url(img/hero-mobile.png);
-    background-size: clamp(379px, 50vw, 500px);/* Faz a imagem cobrir todo o espaço */
+    background-size: clamp(379px, 50vw, 500px);/* mínimo: 250px * ideal: 50vw (cresce com a tela) * máximo: 600px */
     background-position: bottom right; /* Centraliza a imagem */
     background-repeat: no-repeat;
 }
