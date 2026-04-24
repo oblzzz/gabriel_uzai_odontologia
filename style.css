@@ -57,12 +57,12 @@ main{
     display: flex;
     flex-direction: column;
     background-color: var(--bege);
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     padding-bottom: 400px;
 
     background-image: url(img/hero-mobile.png);
-    background-size: 379px; /* Faz a imagem cobrir todo o espaço */
+    background-size: clamp(379px, 50vw, 500px);/* Faz a imagem cobrir todo o espaço */
     background-position: bottom right; /* Centraliza a imagem */
     background-repeat: no-repeat;
 }
