@@ -131,7 +131,7 @@ nav.menu a:hover{
 }
 
 .sobre-gabriel p{
-    font-size: 18;
+    font-size: 1rem;
     text-align: justify;
     padding: 0rem 3rem 0 3rem;
 }
@@ -194,44 +194,7 @@ nav.menu a:hover{
 
 
 
-/*------------------SERVICOS-------------------*/
 
-
-
-.servicos h2{
-    color: var(--verde);
-    text-align: center;
-    font-size: 20px;
-    /* font-weight: 600; */
-    padding: 3rem 0 3rem 0;
-}
-
-.servicos-container{
-    display: grid;
-    grid-template-columns: repeat(2, 190px);
-    justify-content: center;
-    gap: 20px;
-}
-
-
-
-
-.servicos-container .card-servicos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--verde);
-    border-radius: 10px;
-    max-width: 190px;
-    max-height: 90px;
-}
-
-.servicos-container .titulo-card{
-    color: var(--branco);
-    font-size: 18px;
-    font-weight: 600;
-}
 
 
 
