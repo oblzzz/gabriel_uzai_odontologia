@@ -122,22 +122,18 @@ nav.menu a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* max-width: 100px; */
 }
 
-.sobre h2{
+.sobre-gabriel h2{
     font-size: 24px;
     color: var(--verde);
-    padding: 3rem 2rem 0 3rem;
-    /* padding: 30px 0 30px 25px; */
+    padding: 3rem 2rem 3rem 3rem;
 }
 
-.sobre p{
+.sobre-gabriel p{
     font-size: 18;
     text-align: justify;
-    padding: 2rem 3rem 0 3rem;
-    
-    /* padding: 0 25px 25px 25px; */
+    padding: 0rem 3rem 0 3rem;
 }
 
 .sobre-gabriel{
@@ -169,11 +165,23 @@ nav.menu a:hover{
         /* border: 3px solid red; */
     }
 
+    .sobre-equipe h2{
+    font-size: 24px;
+    color: var(--verde);
+    padding: 3rem 2rem 3rem 3rem;
+}
+
+.sobre-equipe p{
+    font-size: 18;
+    text-align: justify;
+    padding: 0rem 3rem 0 3rem;
+}
+
 .sobre-equipe img{
     display: flex;
     margin: auto;
     max-width: 100%;
-    padding: 0px 0px;
+    padding: 20px 0px;
 }
 
 .sobre-equipe p{
@@ -291,6 +299,8 @@ nav.menu a:hover{
         grid-column: 2;
     } */
 
+    
+
     .sobre-container{
         display: flex;
         flex-direction: column;
@@ -298,9 +308,11 @@ nav.menu a:hover{
         /* border: 3px solid blue;*/
     } 
 
+    
+
     .sobre-gabriel{
         display: grid;
-        grid-template-columns: 10% 1fr 1fr 10%;
+        grid-template-columns: 5% 1fr 1fr 5%;
         /* gap: 1.5rem; */
         align-items: center;
         max-width: 1200px;
@@ -324,19 +336,24 @@ nav.menu a:hover{
         grid-row: 1 / 3;
     }
 
+
     .sobre-gabriel p{
-        padding-left: 4.5rem;
+        font-size: 18;
+        text-align: justify;
+        padding: 0rem 0rem 0 3rem;
     }
 
      .sobre-gabriel h2{
-        padding: 0 0 2rem 7.5rem;
+        font-size: 24px;
+        color: var(--verde);
+        padding: 3rem 2rem 3rem 3rem;
      }
 
     /* EQUIPE */
 
     .sobre-equipe{
         display: grid;
-        grid-template-columns: 10% 1fr 1fr 10%;
+        grid-template-columns: 5% 1fr 1fr 5%;
         align-items: center;
         max-width: 1200px;
         margin: 0 auto;
@@ -358,13 +375,14 @@ nav.menu a:hover{
     }
 
     .sobre-equipe p{
-        padding-right: 4.5rem;
+        padding: 0rem 3rem 3rem 0rem;
     }
 
      .sobre-equipe h2{
-        padding: 0 4.5rem 2rem 0;
+        padding: 3rem 3rem 3rem 0rem;
      }
 
+     }
 
 
     
