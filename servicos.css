@@ -22,29 +22,41 @@
     text-align: center;
 }
 .servicos-container{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(220px, 220px));
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(220px, 220px)); */
+    /* grid-template-rows: repeat(2, 1fr); */
+    /* justify-content: stretch; */
     gap: 20px;
-
-    grid-template-areas:
-    "card-servicos card-servicos"
-    "card-servicos card-servicos";
+    padding: 0 20px;
 }
 
 .card-servicos{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-items: flex-start;
     
     background-color: var(--verde);
     border-radius: 10px;
+    width: 100%;
     min-height: 120px;
+    min-width: 200px;
+    max-width: 300px;
     padding: 15px;
+}
+
+.card-servicos:nth-child(odd) {
+
+  justify-self: end; /* encosta na direita */
+
+}
+
+.card-servicos:nth-child(even) {
+
+  justify-self: start; /* encosta na esquerda */
+
 }
 
 .card-servicos h2{
@@ -60,6 +72,24 @@
     font-size: 1rem;
     color: var(--bege);
     font-weight: 500;
+}
+
+@media screen and (min-width:1024px) {
+   .servicos-container {
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    flex-direction: row;
+    padding: 0 60px;
+  }
+
+  .card-servicos {
+    grid-column: auto;
+    max-width: none;
+    width: 100%;
+    justify-self: stretch;
+  }
+
 }
 
 
