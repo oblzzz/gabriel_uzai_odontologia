@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --verde: #283C25;
+    --verde-escuro: #21331e;
+    --verde-hover: #254420;
+    --bege: #E2D6C3;
+    --branco: #FFFF;
+    --cinza: #797979;
+}
+
+/* BOTÃO HAMBURGUER */
+#burger{
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* MOBILE */
+@media screen and (max-width: 500px){
+
+    header{
+        height: 55px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0; /* importante */
+        min-height: 60px; /* 🔥 agora pode crescer */
+    }
+
+
+    #burger{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 55px; /* 🔥 igual ao header */
+        width: 100%;
+    }  
+
+    nav.menu{
+    width: 100%;
+    margin: 0 auto;    /* centraliza */
+    }
+
+
+
+    #menu a{
+    display: block;
+    margin: auto;
+    width: 90%;
+    background-color: var(--verde-escuro);
+    color: var(--branco);
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.2s;
+}
+
+#menu a:hover{
+    background-color: var(--verde-hover);
+    color: var(--bege);
+}
+
+    nav.menu ul{
+    position: absolute;   /* 👈 ESSENCIAL */
+    top: 55px;            /* 👈 altura do header */
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    gap: 10px;
+    padding: 0;
+}
+
+    nav.menu.ativo ul{
+    max-height: 400px;
+    opacity: 1;
+    padding: 15px 0;
+}
+
+
+    nav.menu ul li{
+         display: flex;
+
+    justify-content: center;
+        /* background-color: var(--bege); */
+
+    border-radius: 8px;
+        padding: 0; /* remove o problema */
+}
+
+    /* nav.menu ul li{
+        width: 100%;
+        text-align: center;
+        border: 2px solid red;
+        padding: 20px 0;
+    } */
+
+}
