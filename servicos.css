@@ -78,18 +78,50 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  
 }
 
 
 .card-depo{
     background-color: var(--bege);
     display: block;
-    margin: auto;
+    /* margin: auto; */
     border-radius: 10px;
     text-align: center;
     font-size: 1rem;
-    margin: 0 20px 0 20px;
+    margin: auto;
     padding: 1rem;    
+    max-width: 620px;
+    width: calc(100% - 40px);
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+}
+
+.contato a{
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    background-color: #283C25;
+    color: var(--branco);
+    border-radius: 10px;
+    padding: 20px 35px;
+    margin-bottom: 3rem;
+}
+
+footer{
+    background-color: var(--verde);
+    color: var(--branco);
+    text-align: center;
+    padding: 15px;
+}
+
+footer a{
+    color: antiquewhite;
+    font-weight: 600;
 }
 
 
@@ -115,6 +147,12 @@
     width: 100%;
     justify-self: stretch;
   }
+
+  .card-depo{
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+}
 
 }
 
